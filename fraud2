@@ -1,0 +1,15 @@
+<script type = 'text/javascript'>
+ 
+    function Person(name , age){
+        this.name = name ;
+        this.age = age ;
+        this.say = function (){
+            return "name : "+ this.name + " age: "+this.age ;
+        } ;
+    }
+ 
+    var o = new Object() ;//可以简化为Object()
+    Person.call(o , "zhangsan" , 20) ;
+    console.log(o.say() );//name : zhangsan age: 20 
+ 
+</script>
